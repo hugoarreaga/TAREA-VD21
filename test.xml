@@ -1,0 +1,28 @@
+<?xml version ="1.0" encoding = "UTF-8"?>
+<agenda>
+    <contacto>
+        <telefono>123456789</telefono>
+        <nombre>adfs</nombre>
+        <apellido>apellido1</apellido>
+    </contacto>
+    <contacto>
+        <telefono>1234567892</telefono>
+        <nombre>adfs</nombre>
+        <apellido>apellido1</apellido>
+    </contacto>
+    <contacto>
+        <telefono>1234567892</telefono>
+        <nombre>adfs</nombre>
+        <apellido>apellido2</apellido>
+    </contacto>
+    <contacto>
+        <telefono>1234567893</telefono>
+        <nombre>adfs</nombre>
+        <apellido>apellido3</apellido>
+    </contacto>
+    <contacto>
+        <telefono>1234567894</telefono>
+        <nombre>adfs</nombre>
+        <apellido>apellido4</apellido>
+    </contacto>
+</agenda>
