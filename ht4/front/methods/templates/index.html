@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de musica</title>
+
+    <style>
+        div {
+          width: 300px;
+          margin: auto;
+          border: 3px solid #3f23f5;
+        }
+        p,h2,
+        form {
+          text-align: center;
+          color: #073a8d;
+        }
+        h2,
+        h3 {
+            text-align: center;
+            color: #0d4baf;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <p>Insertar elemento</p>
+        <form action="" method="get">
+            <input type="text" name="file" id="file"><br>
+            <button type="submit">Enviar</button><br>
+
+        </form>
+        <h2>
+            {{mensaje}}
+        </h2>
+    </div>
+    <hr color="#c7c34c" size="5" width="90%" >
+</body>
+</html>

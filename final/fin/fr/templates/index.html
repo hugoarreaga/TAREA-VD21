@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div>
+        <h2>ingresar datos</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="number" name="nopedido" id="nopedido"><br>
+            <input type="date" name="fechapedido" id="fechapedido"><br>
+            <input type="text",name='cliente',id='cliente'><br>
+            
+            <input type="text",name='descripcion',id='descripcion'><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+    <br>
+    <div>
+        <h2>eliminar pedido</h2>
+        <form action="" method="delete">
+            {% csrf_token %}
+            <input type="number" name="nopedido_d" id="nopedido_d"><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <h2>Mostrar datos</h2>
+        <table >
+            <tr border="1">
+                <th>no pedido</th>
+                <th> fecha</th>
+                <th> cliente</th>
+                <th> descripcion</th>
+            </tr>
+            {% for a in data %}
+            <tr>
+                <th>{{a.nopedido}}</th>
+                <th> {{a.fechapedido}}</th>
+                <th> {{a.cliente}}</th>
+                <th> {{a.descripcion}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

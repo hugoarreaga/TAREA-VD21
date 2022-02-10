@@ -29,16 +29,13 @@ class ListaContacto:
         elif new_contact.apellido < self.primero.apellido:
             new_contact.siguiente = self.primero
             self.primero = new_contact
-
         else:
             current_contact = self.primero
             while current_contact.siguiente:
                 if new_contact.apellido < current_contact.siguiente.apellido:
-                    
                     new_contact.siguiente = current_contact.siguiente
                     current_contact.siguiente = new_contact
                 current_contact = current_contact.siguiente
-            
             current_contact.siguiente = new_contact            
         
 
